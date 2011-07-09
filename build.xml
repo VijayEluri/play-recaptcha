@@ -40,7 +40,7 @@
         <delete dir="tmp" />
     </target>
 
-    <target name="compile"depends="check">
+    <target name="compile" depends="check">
         <mkdir dir="tmp/classes" />
         <javac srcdir="src" destdir="tmp/classes" target="1.5" debug="true">
             <classpath refid="project.classpath" />
