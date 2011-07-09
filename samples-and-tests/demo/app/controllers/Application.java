@@ -9,6 +9,11 @@ import ugot.recaptcha.Recaptcha;
 
 import models.*;
 
+
+/**
+ * 
+ * @author Olivier Refalo
+ */
 public class Application extends Controller {
 
     public static void index() {

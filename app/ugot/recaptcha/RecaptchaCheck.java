@@ -7,6 +7,10 @@ import net.sf.oval.exception.OValException;
 import play.mvc.Http.Request;
 import play.mvc.Scope.Params;
 
+/**
+ * 
+ * @author Olivier Refalo
+ */
 public class RecaptchaCheck extends AbstractAnnotationCheck<Recaptcha> {
 
     final static String mes = "validation.recaptcha";

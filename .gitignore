@@ -1,4 +1,7 @@
 /eclipse/
 /dist/
 *.class
-sample-app/tmp/*
+/.project
+/.classpath
+/.settings
+samples-and-tests/demo/tmp/*

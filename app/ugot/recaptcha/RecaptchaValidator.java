@@ -6,6 +6,10 @@ import play.Play;
 import play.mvc.Http.Request;
 import play.mvc.Scope.Params;
 
+/**
+ * 
+ * @author Olivier Refalo
+ */
 public class RecaptchaValidator {
 
 	public static final String YOUR_RECAPTCHA_PRIVATE_KEY = "YOUR_RECAPTCHA_PRIVATE_KEY";
