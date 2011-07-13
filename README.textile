@@ -47,17 +47,17 @@ h4. Generating the captcha
 Play being an MVC framework, we need to define an action in the controller and its associated page.
 Edit file **app/controller/Application.java** as follows:
 
-bc..
+<pre>
 	public class Application extends Controller {
 		public static void index() {
 			render();
 		}
 	}
-
+</pre>
 
 Create a file `app/view/Application/index.html`
 
-bc..
+<pre>
 #{extends 'main.html' /}
 #{set title:'Test reCaptcha' /}
     #{form @save()} My sample captcha!
@@ -76,7 +76,7 @@ bc..
 		</p>
 		<p>
 #{/form}
-
+</pre>
 
 h4. Validating the captcha
 
