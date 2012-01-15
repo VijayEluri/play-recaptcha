@@ -5,3 +5,4 @@
 /.classpath
 /.settings
 samples-and-tests/demo/tmp/*
+/tmp
