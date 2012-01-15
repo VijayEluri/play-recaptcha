@@ -29,9 +29,7 @@ h2. Installation
 
 # run *'play install recaptcha'* and let Play! install the module for you
 # open your application **conf/dependencies.yml** and add
-<pre>
-    - play -> recaptcha 1.x
-</pre>
+*    - play -> recaptcha 1.x
 # open your application **conf/application.conf** and add
 ## ugot.recaptcha.privateKey=YOUR_RECAPTCHA_PRIVATE_KEY
 ## ugot.recaptcha.publicKey=YOUR_RECAPTCHA_PUBLIC_KEY
