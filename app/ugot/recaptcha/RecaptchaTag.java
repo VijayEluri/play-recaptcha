@@ -60,8 +60,22 @@ public class RecaptchaTag extends FastTags {
 					lang = "en";
 			}
 			props.put("lang", lang);
+			
+			//add support for captcha over https:
+			Boolean https = (Boolean) args.get("https");
+			
+			if (https == null) {
+				https = false;
+			}
+			
+			String captcha;
+			if (https) {
+				captcha = ReCaptchaFactory.newSecureReCaptcha(publickey, privatekey, false).createRecaptchaHtml(null, props);
+				
+			} else {
+				captcha = ReCaptchaFactory.newReCaptcha(publickey, privatekey, false).createRecaptchaHtml(null, props);
+			}
 
-			String captcha = ReCaptchaFactory.newReCaptcha(publickey, privatekey, false).createRecaptchaHtml(null, props);
 			out.print(captcha);
 		}
 
