@@ -107,21 +107,14 @@ public class Application extends Controller {
 
 The **ugot.recaptcha** tag takes the following parameters
 
-**theme**: The theme to use. Possible values are:red (default), white,
-blackglass, clean<br/>\
-**tabindex**: Sets a tabindex for the reCAPTCHA text box. If other
-elements in the form use a tabindex, this should be set so that
-navigation is easier for the user<br/>\
-**lang**: A two character country code. By default the module will ask
-Play to provide the negotiated language. possible values are:
-en,nl,fr,de,pt,ru,es,tr\
-**https**: true / false. Optional parameter, default value is false. If
-true recaptcha is fetched via https, otherwise http
+
+**theme**: The theme to use. Possible values are:red (default), white, blackglass, clean  
+**tabindex**: Sets a tabindex for the reCAPTCHA text box. If other elements in the form use a tabindex, this should be set so that navigation is easier for the user  
+**lang**: A two character country code. By default the module will ask Play to provide the negotiated language. possible values are: en,nl,fr,de,pt,ru,es,tr  
+**https**: true / false. Optional parameter, default value is false. If true recaptcha is fetched via https, otherwise http
 ([http://code.google.com/apis/recaptcha/docs/tips.html)](http://code.google.com/apis/recaptcha/docs/tips.html)).
 
-See the [reCaptcha
-documentation](http://code.google.com/apis/recaptcha/docs/customization.html)
-for more details.
+See the [reCaptcha documentation](http://code.google.com/apis/recaptcha/docs/customization.html) for more details.
 
 Credits
 -------
