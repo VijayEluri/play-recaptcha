@@ -10,3 +10,5 @@ samples-and-tests/demo/logs/
 samples-and-tests/demo/test-result/
 modules/
 tmp/
+.DS_Store
+
