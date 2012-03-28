@@ -15,5 +15,7 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.playframework.playclipse.playNature</nature>
 	</natures>
-	
+	<linkedResources><link><name>rythm-0.9.6c</name><type>2</type><location>/Users/orefalo/GitRepositories/play-recaptcha/modules/rythm-0.9.6c/app</location></link>
+<link><name>conf/rythm-0.9.6c</name><type>2</type><location>/Users/orefalo/GitRepositories/play-recaptcha/modules/rythm-0.9.6c/conf</location></link>
+</linkedResources>
 </projectDescription>

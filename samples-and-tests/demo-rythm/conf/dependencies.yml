@@ -1,0 +1,5 @@
+require: 
+     - play
+     - play -> recaptcha 1.3
+     - play -> rythm 0.9.6c
+
