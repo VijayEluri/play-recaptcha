@@ -27,6 +27,11 @@ public class RecaptchaTag extends FastTags {
 
 	public static void _recaptcha(Map<?, ?> args, Closure body, PrintWriter out, ExecutableTemplate template, int fromLine) {
 
+		final String disabled = Play.configuration.getProperty("ugot.recaptcha.disable","false");
+		if ("true".equals(disabled.trim().toLowerCase()))
+		{
+			return;
+		}
 		String publickey = Play.configuration.getProperty("ugot.recaptcha.publicKey", "YOUR_RECAPTCHA_PUBLIC_KEY");
 		String privatekey = Play.configuration.getProperty("ugot.recaptcha.privateKey",
 				RecaptchaValidator.YOUR_RECAPTCHA_PRIVATE_KEY);

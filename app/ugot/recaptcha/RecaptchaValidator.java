@@ -20,7 +20,11 @@ public class RecaptchaValidator {
 	public static boolean checkAnswer(Request request, Params params) {
 
 		String remoteAddr = request.remoteAddress;
-
+		final String disabled = Play.configuration.getProperty("ugot.recaptcha.disable","false");
+		if ("true".equals(disabled.trim().toLowerCase()))
+		{
+			return true;
+		}
 		ReCaptchaImpl reCaptcha = new ReCaptchaImpl();
 		String privatekey = Play.configuration.getProperty("ugot.recaptcha.privateKey", YOUR_RECAPTCHA_PRIVATE_KEY);
 		if (privatekey == null || privatekey.trim().length() == 0 || YOUR_RECAPTCHA_PRIVATE_KEY.equals(privatekey))
